@@ -84,11 +84,31 @@ p {
     display: none;
 }
 
+.container-card:not(:nth-of-type(5)) .kim-img {
+    display: none;
+}
+
+.kim-img:hover {
+    border: solid 3px var(--light-grayish-blue-2);
+    border-radius: 10px;
+}
+
+.container-card:nth-of-type(2) p span, 
+.container-card:nth-of-type(4) p span, 
+.container-card:nth-of-type(5) p span {
+    display: none;
+}
+
+p span:hover {
+    color: var(--blue);
+    font-weight: bold;
+}
+
 .card-content {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 6px;
 }
 
 .card-content img {
@@ -101,8 +121,8 @@ p {
 }
 
 .unread {
-    background-color: var(--light-grayish-blue-2);
-    border: solid 1px var(--light-grayish-blue-1);
+    background-color: var(--very-light-grayish-blue);
+    border: solid 2px var(--light-grayish-blue-2);
 }
 
 .unread .message {
@@ -122,6 +142,10 @@ p {
     border: solid 2px var(--light-grayish-blue-1);
     border-radius: 5px;
     padding: 20px;
+}
+
+.border:hover {
+    background-color: var(--light-grayish-blue-1);
 }
 
 .attribution { 
