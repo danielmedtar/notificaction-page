@@ -125,12 +125,12 @@ p span:hover {
     border: solid 2px var(--light-grayish-blue-2);
 }
 
-.unread .message {
+.unread .message1 {
     display: flex;
     align-items: center;
 }
 
-.unread .message::after {
+.unread .message1::after {
     content: "•";
     color: var(--red);
     font-size: 30px;
